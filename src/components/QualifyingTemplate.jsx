@@ -69,7 +69,7 @@ function QualifyingTemplate() {
         redirect: 'follow'
       };
       
-      fetch("http://ergast.com/api/f1/current.json", requestOptions)
+      fetch("https://ergast.com/api/f1/current.json", requestOptions)
         .then(response => response.text())
         .then(result => {
             let res = JSON.parse(result);
