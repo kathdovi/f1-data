@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";import ReactDOM from 'react-dom';
@@ -10,12 +10,12 @@ import reportWebVitals from './reportWebVitals';
 import QualifyingTemplate from './components/QualifyingTemplate';
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={process.env.PUBLIC_URL}>
       <Routes>
       <Route exact path="/" element={<App />} />
       <Route exact path="/quali" element={<QualifyingTemplate />} />
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
