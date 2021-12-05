@@ -12,8 +12,8 @@ import QualifyingTemplate from './components/QualifyingTemplate';
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/quali" element={<QualifyingTemplate />} />
+      <Route exact path="/" element={<App />} />
+      <Route exact path="/quali" element={<QualifyingTemplate />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
