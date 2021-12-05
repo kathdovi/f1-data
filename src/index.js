@@ -10,10 +10,10 @@ import reportWebVitals from './reportWebVitals';
 import QualifyingTemplate from './components/QualifyingTemplate';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
       <Route path="/" element={<App />} />
-      <Route path="quali" element={<QualifyingTemplate />} />
+      <Route path="/quali" element={<QualifyingTemplate />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
